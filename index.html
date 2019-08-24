@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Content Count</title>
+</head>
+<body>
+    <header>
+        <h1>Подсчёт загруженного контента</h1>
+    </header>
+    <div class="content">
+        <h3 class="no-content">Пока не загружено ни одной категории...</h3>
+        <div class="with-content">
+            <h3>Список категорий:</h3>
+            <ul class="categories">
+
+            </ul>
+        </div>
+        <div class="notes">
+            <label for="notes">Заметки:</label><br>
+            <textarea id="notes"></textarea>
+        </div>
+        <button class="btn btn-reset" type="reset">Очистить список категорий и заметки</button>
+    </div>
+    <hr>
+    <div class="add-category">
+        <h3>Добавление новой категории:</h3>
+        <form class="add-category-form" id="add-category">
+            <label for="title">Введите название категории</label><br>
+            <input id="title" placeholder="Например: Утюги"><br>
+            <button class="btn btn-add" type="submit">Добавить категорию</button>
+        </form>
+    </div>
+
+    <script src="js/index.js" defer></script>
+</body>
+</html>
